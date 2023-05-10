@@ -1,0 +1,30 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge($utilities,(
+    "background-color": (property: background-color,
+      class: bg,
+      local-vars: ("bg-opacity": 1),
+      values: map-merge($utilities-bg-colors,
+        ("transparent": transparent,
+          "body-secondary": rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
+          "body-tertiary": rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity)),
+        ))),
+    "bg-opacity": (css-var: true,
+      class: bg-opacity,
+      values: (10: .1,
+        25: .25,
+        50: .5,
+        75: .75,
+        100: 1))
+)
+    );
+      
+
+@import "bootstrap/scss/utilities/api";
+
+
