@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Vite</title>
   <link rel="stylesheet" href="./scss/styles.css">
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="js/main.js" defer></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg bg-secondary">
       <div class="container-fluid navbar-text">
-        <a class="navbar-brand text-white" href="#"><img src="../assets/codoacodo.png" class="d-inline-block"
-            alt="Logo CODO a CODO" width="150">Conf Bs As</a>
+        <a class="navbar-brand text-white fs-4 fw-bold" href="#"><img src="../assets/codoacodo.png"
+            class="d-inline-block" alt="Logo CODO a CODO" width="150">CONF BS AS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,23 +22,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto me-2">
             <li class="nav-item align-self-center p-2">
-              <a class="nav-link fw-semibold active text-white text-center" aria-current="page" href="#">La
-                conferencia</a>
+              <a class="nav-link fw-semibold active text-white text-center" aria-current="page" href="#">LA
+                CONFERENCIA</a>
             </li>
             <li class="nav-item align-self-center p-2">
-              <a class="nav-link fw-semibold text-center" href="#oradores">Los oradores</a>
+              <a class="nav-link fw-semibold text-center" href="#oradores">LOS ORADORES</a>
             </li>
             <li class="nav-item align-self-center p-2">
-              <a class="nav-link link-offset-2 link-underline-opacity-100-hover fw-semibold text-center" href="#">El
-                lugar y
-                la
-                fecha</a>
+
+              <a id="date" class="nav-link fw-semibold text-center " href="#">LUGAR
+                Y FECHA</a>
             </li>
             <li class="nav-item align-self-center p-2">
-              <a class="nav-link fw-semibold text-center" href="#conviertete">Conviertete en orador</a>
+              <a class="nav-link fw-semibold text-center " href="#conviertete">CONVIERTETE EN ORADOR</a>
             </li>
-            <li class="nav-item align-self-center m-2 p-2">
-              <a class="nav-link fw-semibold text-warning bg-dark d-inline text-center" href="#">Comprar tickets</a>
+            <li class="nav-item align-self-center m-2 p-2 ">
+              <a class="fw-semibold text-warning bg-dark d-inline text-center p-2 rounded text-decoration-none btn-compra text-nowrap "
+                href="#">COMPRAR TICKETS</a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
               otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
             <div class="text-end">
               <a href="#conviertete" class="btn btn-outline-warning my-3">Quiero ser orador</a>
-              <a href="" class="btn btn-warning px-3">Comprar tickets</a>
+              <a href="" class="btn btn-warning px-3 btn-compra">Comprar tickets</a>
             </div>
           </div>
         </div>
@@ -85,13 +85,7 @@
           <p class="card-text">Steve Jobs fue un líder icónico en la industria de la tecnología y uno de los fundadores
             de Apple. Fue conocido por su
             enfoque en el diseño y la experiencia del usuario, lo que lo llevó a crear productos hermosos y fáciles de
-            usar. Este
-            enfoque se puede aplicar a la creación de aplicaciones web con JavaScript y React, que buscan crear
-            experiencias
-            excepcionales para el usuario. Al igual que Jobs, JavaScript y React están liderando la industria y
-            revolucionando la
-            forma en que los usuarios interactúan con las aplicaciones web.
-          </p>
+            usar.</p>
         </div>
       </div>
       <div class="card m-2" style="width: 18rem;">
@@ -103,9 +97,7 @@
           <p class="card-text">Gates fue un pionero en la industria y su
             legado en la informática es inmenso.
             Gates también ha sido un defensor de la educación y la filantropía a través de la fundación Bill y Melinda
-            Gates. Su ejemplo y liderazgo han inspirado a muchos líderes empresariales y desarrolladores, incluyendo
-            aquellos que
-            trabajan con JavaScript y React para crear aplicaciones web innovadoras.
+            Gates.
           </p>
         </div>
       </div>
@@ -120,20 +112,16 @@
             máquina para hacer más que simplemente calcular números, y escribió el primer algoritmo diseñado
             específicamente para
             ser procesado por la Máquina Analítica.
-            Lovelace fue una pionera en su tiempo, demostrando una habilidad para la lógica y el pensamiento abstracto.
-            Su ejemplo es un recordatorio de que el talento y la innovación no conocen límites de
-            género, y puede inspirar a los emprendedores a pensar más allá de lo convencional en sus negocios y
-            startups.
           </p>
         </div>
       </div>
     </section>
     <section class="container mt-5">
       <div class="d-flex flex-wrap">
-        <div class="col">
+        <div class="col-xl">
           <img src="./assets/honolulu.jpg" class="img-thumnail" alt="Honolulu" width="100%">
         </div>
-        <div class="col bg-secondary p-4" width="100%">
+        <div class="col bg-secondary p-4 mh-50" width="100%">
           <h3 class="text-white">Bs As - Octubre</h3>
           <p class="text-white h-auto">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en
             los
@@ -178,6 +166,7 @@
       <a href="" class="nav-link text-wrap text-center py-2 fw-semibold">Términos y condiciones</a>
       <a href="" class="nav-link text-wrap text-center py-2 fw-semibold">Privacidad</a>
       <a href="" class="nav-link text-wrap text-center py-2 fw-semibold">Estudiantes</a>
+      <p class="container text-center">PABLO BALANZINO 2023</p>
     </footer>
   </main>
 </body>

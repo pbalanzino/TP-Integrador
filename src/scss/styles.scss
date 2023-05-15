@@ -31,7 +31,10 @@ body{
   opacity: 1;
 }
 
-
+.btn-compra:hover {
+  list-style: none;
+  background-color: #fff !important;
+}
 .article {
   height: 100vh;
   background-image: url('../assets/hero.jpg');
